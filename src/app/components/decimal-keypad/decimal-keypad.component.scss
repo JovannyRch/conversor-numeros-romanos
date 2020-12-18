@@ -1,0 +1,15 @@
+.display-container{
+    height: 70vh;
+    width: 100%;    
+    background-color: #eee; 
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+}
+.kaypad-container{
+    background-color: white;
+    height: 85%;
+    width: 90%;
+}
