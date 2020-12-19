@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {KeyButtonComponent} from "./../../components/key-button/key-button.component"
+import { Component, OnInit, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-decimal-keypad',
@@ -8,8 +8,12 @@ import {KeyButtonComponent} from "./../../components/key-button/key-button.compo
 })
 export class DecimalKeypadComponent implements OnInit {
 
+  @Output() onKeyClick = new EventEmitter();
   constructor() { }
 
   ngOnInit() {}
 
+  handleButtonClick(value: string){
+    this.onKeyClick.emit(value);
+  }
 }

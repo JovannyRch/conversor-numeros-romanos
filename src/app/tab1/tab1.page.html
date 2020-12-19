@@ -2,6 +2,6 @@
 <ion-content [fullscreen]="true">
  
 
-  <app-display-input title1="Decimal" title2="Romano" ></app-display-input>
-  <app-decimal-keypad></app-decimal-keypad>
+  <app-display-input [value1]="value1" [value2]="value2" title1="Decimal" title2="Romano" ></app-display-input>
+  <app-decimal-keypad (onKeyClick)="handleKeyClick($event)"></app-decimal-keypad>
 </ion-content>

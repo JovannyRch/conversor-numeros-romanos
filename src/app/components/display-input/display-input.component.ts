@@ -9,13 +9,15 @@ export class DisplayInputComponent implements OnInit {
 
   @Input() title1: string;
   @Input() title2: string;
+  @Input() value1: string;
+  @Input() value2: string;
 
   constructor() { }
 
   ngOnInit() {}
 
   copyInputDisplay(){
-    alert("hola");
+
   }
 
 }
